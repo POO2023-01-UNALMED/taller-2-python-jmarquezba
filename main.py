@@ -15,6 +15,7 @@ class Auto:
         for asiento in self.asientos:
             if isinstance(asiento, Asiento):
                 cantAsientos+= 1
+        return cantAsientos
 
     def verificarIntegridad(self):
         if self.motor.registro!= self.registro:
